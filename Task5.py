@@ -1,19 +1,23 @@
-def get_sum(nums_str):
-    """Возвращает сумму чисел, содержащихся в строке и разделенных пробелом"""
-    nums = nums_str.split()
-    nums_sum = 0
+def input_sum():
+    """Выполняет ввод чисел с клавиатуры и возвращает их сумму"""
+    total_sum = 0
 
-    for n in nums:
-        try:
-            nums_sum += int(n)
-        except ValueError:
-            print(n, "не является числом")
+    while True:
+        nums = input("Введите цела числа через пробел или * для выхода: ").split()
+        nums_sum = 0
+        for n in nums:
+            try:
+                total_sum += int(n)
+                nums_sum += int(n)
+            except ValueError:
+                if n == "*":
+                    return total_sum
+                else:
+                    print(n, "не является целым числом")
 
-    return nums_sum
+        print("Сумма введенных чисел:", nums_sum)
 
-total_sum = 0
+    return total_sum
 
-while True:
-    nums = input("Введите строку чисел, разделенных пробелом: ")
-    total_sum += get_sum(nums)
-    print("Общая сумма: ", total_sum)
+
+print("Сумма всех введенных чисел:", input_sum())
