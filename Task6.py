@@ -1,5 +1,4 @@
-from itertools import count
-from itertools import cycle
+from itertools import count, cycle
 
 for el in count(3):
     if el > 10:
