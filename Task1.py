@@ -1,4 +1,4 @@
-my_f = open('input_files/Task1.txt', 'w')
+my_f = open('output_files/Task1.txt', 'w')
 while True:
     line = input('Введите необходимые данные: ')
     if line == '':

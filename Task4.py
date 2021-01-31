@@ -6,7 +6,7 @@ translations = {
     'Four': 'Четыре',
 }
 
-f2 = open('Task4_output.txt', 'w')
+f2 = open('output_files/Task4_output.txt', 'w')
 for line in f:
     parts = line.split()
     parts[0] = translations[parts[0]]
