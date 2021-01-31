@@ -1,0 +1,5 @@
+Ivanov 15000
+Petrov 20000
+Sidorov 7000
+Lihov 45000
+Lebedev 36000
