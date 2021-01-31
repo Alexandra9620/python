@@ -1,4 +1,4 @@
-with open('Task2.txt', 'r') as f:
+with open('input_files/Task2.txt', 'r') as f:
     size = 0
     for line in f:
         size += 1
