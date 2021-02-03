@@ -2,7 +2,6 @@ class Worker:
     name = 0
     surname = 0
     position = 0
-    _income = {"wage": 0, "bonus": 0}
 
     def __init__(self, _income):
         self._income = _income
